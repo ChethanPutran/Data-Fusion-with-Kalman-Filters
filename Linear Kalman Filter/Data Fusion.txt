@@ -1,0 +1,30 @@
+************************* Data Fusion ******************************
+	
+How does it work?
+
+* Initial Probability Distribution increases as the car moves from initial state to final state
+
+Two phases of data fusion :
+* Prediction Step(Uncertainity increases)
+* Update Stage(Uncertainity shrinks)
+* Kalman Filter allows to do it numerically and mathematically simply by making some assumptions
+  about the probability distribution and few other properties of the dynamic system
+
+
+**************** Probability Theory *************************
+
+Probability Distributon:
+
+	P(A or B) = P(A) + P(B) - P(A and B)
+
+	(Total Probability = 1 )Sum of probability of all is equal to 1.
+
+	* Mutually Exclusive	
+	P(A and B) = 0 (if not => non-mutually exclusive)
+	=> A and B are mutually exclusive.
+	=> P(A or B) = P(A) + P(B)
+
+Conditional Probability:
+	=> Events are independent if the occuring of one doesn't depend on occuring of other (if not => dependent)
+
+*************************** Gaussian Distribution **********************	
